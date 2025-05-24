@@ -11,12 +11,10 @@ These are fundamental to almost all modern ML.
 
 - **L-infinity Norm** ($$\|x\|_\infty$$): The maximum absolute value among the vector's components, $$ \|x\|_\infty = \max_i |x_i| $$.
 
-### Question 1.2: Vector Normalization (Unit Vector)
+#### Question 1.2: Vector Normalization (Unit Vector)
 
 **Problem:** Given a 1D NumPy array (`vector`), write a function to normalize it to a unit vector (i.e., its L₂ norm becomes 1). Handle the case of a zero vector.
 
 **Mathematical Background:**  
 To normalize a vector **x** to a unit vector **x̂**, you divide each component by its L₂ norm:  
-$$
-\hat{x} \;=\;\frac{x}{\|x\|_{2}}.
-$$
+$$\hat{x} \;=\;\frac{x}{\|x\|_{2}}$$
