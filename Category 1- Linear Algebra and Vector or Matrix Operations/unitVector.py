@@ -5,6 +5,7 @@ def normalizeVector(vector):
     """
         Normalizes a NumPy vector to a unit vector (L2 norm = 1).
         Handles zero vectors to prevent division by zero.
+        NOTE: Vector normalization is fundamental in NLP for cosine similarity and word embeddings.
     """
     norm = np.linalg.norm(vector)
     if norm == 0:
