@@ -26,7 +26,7 @@ $$\hat{x}=\frac{x}{\|x\|_{2}}$$
 **Mathematical Background:** Cosine similarity measures the cosine of the angle between two non-zero vectors. It is a measure of similarity between two vectors of an inner product space.
 The formula for cosine similarity is:
 
-$\operatorname{cosine_similarity}(A, B) = \frac{A \cdot B}{\|A\|_2 \|B\|_2} = \frac{\sum A_i B_i}{\sqrt{\sum A_i^2} \sqrt{\sum B_i^2}}$
+$$\mathop{\text{cosine_similarity}}(A, B) = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \sqrt{\sum_{i=1}^{n} B_i^2}}$$
 
 #### Question 1.4: Matrix Multiplication
 
