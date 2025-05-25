@@ -26,7 +26,18 @@ $$\hat{x}=\frac{x}{\|x\|_{2}}$$
 **Mathematical Background:** Cosine similarity measures the cosine of the angle between two non-zero vectors. It is a measure of similarity between two vectors of an inner product space.
 The formula for cosine similarity is:
 
-$$\text{cosine_similarity}(A, B) = \frac{A \cdot B}{\|A\|_2 \|B\|_2} = \frac{\sum A_i B_i}{\sqrt{\sum A_i^2} \sqrt{\sum B_i^2}}$$
+$\operatorname{cosine_similarity}(A, B) = \frac{A \cdot B}{\|A\|_2 \|B\|_2} = \frac{\sum A_i B_i}{\sqrt{\sum A_i^2} \sqrt{\sum B_i^2}}$
+
+#### Question 1.4: Matrix Multiplication
+
+**Problem:** Given two 2D NumPy arrays (matrices), write a function to perform their matrix multiplication.
+
+**Mathematical Background:**
+If matrix $A$ is $m \times n$ and matrix $B$ is $n \times p$, their product $C$ is an $m \times p$ matrix where:
+
+$$C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}$$
+
+The number of columns in the first matrix must equal the number of rows in the second matrix.
 
 
 
