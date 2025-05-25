@@ -24,9 +24,9 @@ $$\hat{x}=\frac{x}{\|x\|_{2}}$$
 **Problem:** Given two 1D NumPy arrays (vectors) representing word embeddings or document vectors, calculate their cosine similarity.
 
 **Mathematical Background:** Cosine similarity measures the cosine of the angle between two non-zero vectors. It is a measure of similarity between two vectors of an inner product space.
+The formula for cosine similarity is:
 
 $$\text{cosine_similarity}(A, B) = \frac{A \cdot B}{\|A\|_2 \|B\|_2} = \frac{\sum A_i B_i}{\sqrt{\sum A_i^2} \sqrt{\sum B_i^2}}$$
-
 
 
 
