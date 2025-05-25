@@ -52,7 +52,7 @@ def uniquePaths(A, B):
     return math.comb(n, k)
 
 
-def visualize_paths(A, B):
+def visualizePaths(A, B):
     """
     Helper function to visualize the grid and show path counts for small grids.
     """
@@ -66,18 +66,17 @@ def visualize_paths(A, B):
     # Calculate paths to each cell
     dp = [[0] * B for _ in range(A)]
 
-    # Initialize
     for j in range(B):
         dp[0][j] = 1
     for i in range(A):
         dp[i][0] = 1
 
-    # Fill DP table
+
     for i in range(1, A):
         for j in range(1, B):
             dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
 
-    # Print grid with path counts
+
     for i in range(A):
         for j in range(B):
             print(f"{dp[i][j]:3}", end=" ")
@@ -90,11 +89,11 @@ def visualize_paths(A, B):
 
 if __name__ == "__main__":
     test_cases = [
-        (2, 2, 2),  # Example from problem
+        (2, 2, 2),
         (3, 3, 6),  # 3x3 grid
         (3, 2, 3),  # 3x2 grid
         (1, 1, 1),  # Edge case: 1x1 grid
-        (4, 4, 20),  # Larger grid
+        (4, 4, 20),
     ]
 
     print("Testing all solutions:")
@@ -107,8 +106,8 @@ if __name__ == "__main__":
         print(f"Combinatorial: {result1}")
 
     # Visualize small examples
-    visualize_paths(2, 2)
-    visualize_paths(3, 3)
+    visualizePaths(2, 2)
+    visualizePaths(3, 3)
 
     # Performance comparison for larger input
     print(f"\nFor 10x10 grid: {uniquePaths(10, 10)} paths")
